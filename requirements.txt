@@ -81,3 +81,4 @@ fontTools
 opencv-python-headless
 odmantic
 nudepy==0.5.1
+spamwatch==0.3.0

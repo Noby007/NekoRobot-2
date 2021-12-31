@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open('{}/NekoRobot/{}'.format(os.getcwd(), config),
+    with open('{}/NekoXRobot/{}'.format(os.getcwd(), config),
               'r') as json_file:
         return json.load(json_file)[key]
 
@@ -15,29 +15,22 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 77777  # integer value, dont use ""
-    API_HASH = "8888"
-    TOKEN = "TOKEN"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    BOT_NAME = "Neko Robot"
-    BOT_USERNAME = "NekoXRobot"
-    OWNER_ID = 769830161 # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "Horimaya"
-    SUPPORT_CHAT = 'NekoXSupport'  #Your own group for support, do not add the @
-    JOIN_LOGGER = -1360279453  #Prints any new group the bot is added to, prints just the name and ID.
-    EVENT_LOGS = -1360279453  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    API_ID = 7686800  # integer value, dont use ""
+    API_HASH = "3a55030126000c9b78fe046bbc36c1ad"
+    TOKEN = "1925135401:AAEKbedFHi0oBh8P0TjRXA8dCuB-B4q_ads"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 627723632 # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "ndpowersupport"
+    SUPPORT_CHAT = 'ndbotsupport'  #Your own group for support, do not add the @
+    JOIN_LOGGER = -1001539159330  #Prints any new group the bot is added to, prints just the name and ID.
+    EVENT_LOGS = -1001539159330  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://pnbwtiqg:BiqKMLM5pTgOxnw5CS9SFSxDDkt5ZvDE@hansken.db.elephantsql.com/pnbwtiqg'  # needed for any database modules
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    ARQ_API_URL = "https://thearq.tech/"
-    ARQ_API_KEY = None
-    REM_BG_API_KEY = ""
-    OPENWEATHERMAP_ID = ""
-    LOG_GROUP_ID = ""
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
 
@@ -62,7 +55,7 @@ class Config(object):
     CASH_API_KEY = 'awoo'  # Get your API key from https://www.alphavantage.co/support/#api-key
     TIME_API_KEY = 'awoo'  # Get your API key from https://timezonedb.com/api
     WALL_API = 'awoo'  #For wallpapers, get one from https://wall.alphacoders.com/api.php
-    AI_API_KEY = 'awoo'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
+    AI_API_KEY = '8cdb56493d12fb2033e375f6ab85ae2f2a52f59b8d0a4fa7b7ee481c049145cdcf781695d7ea599504acad559cd19c90f85ff22418095031d43e2ddd6a0e236a'  #For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
 

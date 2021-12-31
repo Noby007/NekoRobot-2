@@ -4,7 +4,7 @@ import sys
 import json
 import asyncio
 import time
-from spamwatch
+import spamwatch
 import telegram.ext as tg
 from redis import StrictRedis
 from aiohttp import ClientSession

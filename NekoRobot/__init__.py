@@ -4,7 +4,7 @@ import sys
 import json
 import asyncio
 import time
-
+import telegram.ext as tg
 from redis import StrictRedis
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
@@ -220,6 +220,12 @@ aiohttpsession = ClientSession()
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
+pgram = Client(
+    session_name,
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=TOKEN,
+)
 
 pbot = Client(
     ":memory:",

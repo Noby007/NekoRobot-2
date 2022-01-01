@@ -60,7 +60,7 @@ emoji-country-flag
 countryinfo
 html2text
 bs4
-redis
+redis==3.5.3
 pySmartDL
 bing_image_downloader
 search_engine_parser
@@ -70,7 +70,7 @@ lyricsgenius
 tswift
 python-arq
 envparse
-#profanity (Credits to Cutiepii)
+profanity
 better_profanity
 textblob 
 nudepy

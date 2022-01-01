@@ -4,6 +4,6 @@ WORKDIR /root/NekoRobot
 
 COPY . .
 
-RUN /bin/sh -c pip3 install -r requirements.txt
+RUN /bin/sh -c pip3 install -U -r requirements.txt
 
 CMD ["python3","-m","NekoRobot"]

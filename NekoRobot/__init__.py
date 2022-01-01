@@ -4,7 +4,7 @@ import sys
 import json
 import asyncio
 import time
-from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler, Filters, MessageHandler)
+
 from redis import StrictRedis
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
